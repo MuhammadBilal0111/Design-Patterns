@@ -3,7 +3,6 @@ import java.util.List;
 import java.util.HashMap;
 import java.util.Arrays;
 
-
 enum Event{
   NEW_ITEM,
   SALE,

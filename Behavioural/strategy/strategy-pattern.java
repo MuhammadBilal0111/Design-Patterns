@@ -3,7 +3,6 @@ interface PaymentStrategy{
   boolean validatePaymentDetails();
   void pay(int amount);
 }
-
 class PaymentByCreditCard implements PaymentStrategy{
   private Card card;
   @Override
@@ -18,7 +17,7 @@ class PaymentByCreditCard implements PaymentStrategy{
   public void pay(int amount){
     System.out.println("Payment of " + amount + " made using Credit Card");
     card.setAmount(card.getAmount() - amount);
-  } 
+  }
 }
 class Card{
   private String number;
