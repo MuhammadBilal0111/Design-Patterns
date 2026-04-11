@@ -103,7 +103,7 @@ class Client {
   public static List<Vehicle> cloneVehicle(List<Vehicle> vehicles) {
     List<Vehicle> copyList = new ArrayList<>();
     for (Vehicle vehicle : vehicles) {
-      copyList.add(vehicle.clone());
+      copyList.add(vehicle.clone()); // no dependency on concrete classes
     }
     return copyList;
   }
